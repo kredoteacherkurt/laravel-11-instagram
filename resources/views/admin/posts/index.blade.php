@@ -22,7 +22,7 @@
                         {{ $post->id }}
                     </td>
                     <td>
-                        <a href="#">
+                        <a href="{{ route('post.show', $post->id) }}">
                             <img src="{{ $post->image }}" alt="{{ $post->id }}" class="d-block mx-auto image-lg">
                         </a>
                     </td>

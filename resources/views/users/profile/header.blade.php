@@ -53,7 +53,7 @@
             <div class="col-auto">
                 <a href="{{ route('profile.followers', $user->id) }}" class="text-decoration-none text-dark">
                     <strong>{{ $user->followers->count() }}</strong> 
-                    {{ $user->followers->count() == 1 ? 'follower' : 'posts' }}
+                    {{ $user->followers->count() == 1 ? 'follower' : 'followers' }}
                 </a>
             </div>
             <div class="col-auto">

@@ -87,7 +87,7 @@
                             <form action="{{ route('follow.store', $user->id) }}" method="post">
                                 @csrf
 
-                                <button type="submit" class="border-0 transparent p-0 text-primary btn-sm">
+                                <button type="submit" class="border-0 bg-transparent p-0 text-primary btn-sm">
                                     Follow
                                 </button>
                             </form>

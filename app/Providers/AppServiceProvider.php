@@ -30,5 +30,11 @@ class AppServiceProvider extends ServiceProvider
             # Checks if user has admin role ID.
             return $user->role_id === User::ADMIN_ROLE_ID;
         });
+
+
+        if (config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
+        
     }
 }

@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('follows', function (Blueprint $table) {
-            $table->unsignedBigInteger('follower_id');
-            $table->unsignedBigInteger('following_id');
+            $table->unsignedBigInteger('follower_id'); //your id --
+            $table->unsignedBigInteger('following_id'); // user you follow 
 
             $table->foreign('follower_id')->references('id')->on('users');
             $table->foreign('following_id')->references('id')->on('users');

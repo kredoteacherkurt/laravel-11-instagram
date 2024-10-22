@@ -63,7 +63,7 @@
                     @empty
                         <tr>
                             <td class="lead text-muted text-center">
-                                No Categories Found.
+                                No Categories Found!
                             </td>
                         </tr>
                     @endforelse
